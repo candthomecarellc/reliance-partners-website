@@ -14,8 +14,7 @@ const services = [
   {
     icon: <HiOutlineLanguage className="text-secondary-500" />,
     title: 'Multilingual Support',
-    description: 'Expert support in different languages',
-    features: ['English, Bangla, Hindi, Urdu, Spanish']
+    features: ['English', 'Bangla', 'Hindi', 'Urdu', 'Spanish']
   },
   {
     icon: <HiOutlineChartBar className="text-secondary-500" />,
