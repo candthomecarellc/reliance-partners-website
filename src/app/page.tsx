@@ -45,12 +45,12 @@ export default function Home() {
         {/* <section id="workforce">
           <Workforce />
         </section> */}
-        <section id="clients">
+        {/* <section id="clients">
           <Clients />
-        </section>
-        <section id="testimonials">
+        </section> */}
+        {/* <section id="testimonials">
           <Testimonials />
-        </section>
+        </section> */}
         <section id="contact">
           <Contact />
         </section>

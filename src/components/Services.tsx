@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { HiOutlinePhone, HiOutlineCpuChip, HiOutlineChartBar, HiOutlineShieldCheck } from 'react-icons/hi2'
+import { HiOutlinePhone, HiOutlineLanguage, HiOutlineChartBar, HiOutlineShieldCheck } from 'react-icons/hi2'
 
 const services = [
   {
@@ -12,10 +12,10 @@ const services = [
     features: ['24/7 Support', 'Multi-channel Support', 'Quality Assurance']
   },
   {
-    icon: <HiOutlineCpuChip className="text-secondary-500" />,
-    title: 'AI Solutions',
-    description: 'Intelligent automation and analytics',
-    features: ['Chatbots', 'Voice Recognition', 'Predictive Analytics']
+    icon: <HiOutlineLanguage className="text-secondary-500" />,
+    title: 'Multilingual Support',
+    description: 'Expert support in different languages',
+    features: ['English, Bangla, Hindi, Urdu, Spanish']
   },
   {
     icon: <HiOutlineChartBar className="text-secondary-500" />,

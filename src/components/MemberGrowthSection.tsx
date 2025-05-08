@@ -9,7 +9,7 @@ const memberFeatures = [
     icon: <HiOutlineGlobeAlt className="text-primary-500" />,
     title: 'Multilingual Support',
     description: 'Comprehensive language assistance',
-    stats: '15+ Languages',
+    stats: '5+ Languages',
     bullets: ['Native speakers', 'Cultural understanding', 'Accurate translations']
   },
   {

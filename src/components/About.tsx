@@ -58,36 +58,110 @@ const About = () => {
   const [isPlaying, setIsPlaying] = useState(false)
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
+  const [isDragging, setIsDragging] = useState(false)
   const audioRef = useRef<HTMLAudioElement>(null)
 
-  useEffect(() => {
-    if (audioRef.current) {
-      setDuration(audioRef.current.duration)
-    }
-  }, [])
+  // Generate random waveform data
+  const generateWaveform = () => {
+    const bars = 50 // Number of bars in the waveform
+    return Array.from({ length: bars }, () => Math.random() * 0.8 + 0.2) // Random heights between 0.2 and 1
+  }
+
+  const [waveform] = useState(generateWaveform)
 
   const togglePlay = () => {
     if (audioRef.current) {
       if (isPlaying) {
         audioRef.current.pause()
       } else {
-        audioRef.current.play()
+        audioRef.current.play().catch(error => {
+          console.error('Error playing audio:', error)
+        })
       }
       setIsPlaying(!isPlaying)
     }
   }
 
   const formatTime = (time: number) => {
+    if (!isFinite(time)) return '0:00'
     const minutes = Math.floor(time / 60)
     const seconds = Math.floor(time % 60)
     return `${minutes}:${seconds.toString().padStart(2, '0')}`
   }
 
   const handleTimeUpdate = () => {
-    if (audioRef.current) {
-      setCurrentTime(audioRef.current.currentTime)
+    if (audioRef.current && !isDragging) {
+      const time = audioRef.current.currentTime
+      if (isFinite(time)) {
+        setCurrentTime(time)
+      }
     }
   }
+
+  const calculateSeekTime = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!audioRef.current) return 0
+
+    const progressBar = e.currentTarget
+    const rect = progressBar.getBoundingClientRect()
+    const clickPosition = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width))
+    return clickPosition * (audioRef.current.duration || 0)
+  }
+
+  const handleSeek = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!audioRef.current) return
+
+    const seekTime = calculateSeekTime(e)
+    if (isFinite(seekTime) && seekTime >= 0) {
+      audioRef.current.currentTime = seekTime
+      setCurrentTime(seekTime)
+    }
+  }
+
+  const handleDragStart = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.preventDefault()
+    setIsDragging(true)
+    handleSeek(e)
+  }
+
+  const handleDragMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (isDragging) {
+      handleSeek(e)
+    }
+  }
+
+  const handleDragEnd = () => {
+    setIsDragging(false)
+  }
+
+  useEffect(() => {
+    const audio = audioRef.current
+    if (!audio) return
+
+    const handleLoadedMetadata = () => {
+      if (isFinite(audio.duration)) {
+        setDuration(audio.duration)
+      }
+    }
+
+    const handleEnded = () => {
+      setIsPlaying(false)
+      setCurrentTime(0)
+    }
+
+    const handleMouseUp = () => {
+      setIsDragging(false)
+    }
+
+    audio.addEventListener('loadedmetadata', handleLoadedMetadata)
+    audio.addEventListener('ended', handleEnded)
+    window.addEventListener('mouseup', handleMouseUp)
+
+    return () => {
+      audio.removeEventListener('loadedmetadata', handleLoadedMetadata)
+      audio.removeEventListener('ended', handleEnded)
+      window.removeEventListener('mouseup', handleMouseUp)
+    }
+  }, [])
 
   return (
     <div className="relative">
@@ -232,36 +306,86 @@ const About = () => {
               Experience our customer service excellence through this sample call recording.
             </p>
             
-            <div className="bg-white rounded-xl p-6 shadow-sm">
+            <div className="bg-white rounded-xl p-8 shadow-lg border border-neutral-100">
               <audio
                 ref={audioRef}
                 src="/demo-call.mp3"
                 onTimeUpdate={handleTimeUpdate}
-                onEnded={() => setIsPlaying(false)}
               />
-              <div className="flex items-center justify-center gap-4 mb-4">
-                <button 
-                  onClick={togglePlay}
-                  className="w-12 h-12 rounded-full bg-primary-500 text-white flex items-center justify-center hover:bg-primary-600 transition-colors"
-                >
-                  {isPlaying ? (
-                    <HiOutlinePause className="w-6 h-6" />
-                  ) : (
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  )}
-                </button>
-                <div className="flex-1 h-1 bg-neutral-200 rounded-full">
-                  <div 
-                    className="h-full bg-primary-500 rounded-full transition-all duration-100"
-                    style={{ width: `${(currentTime / duration) * 100}%` }}
-                  />
+              <div className="flex flex-col gap-6">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4">
+                    <button 
+                      onClick={togglePlay}
+                      className="w-14 h-14 rounded-full bg-primary-500 text-white flex items-center justify-center hover:bg-primary-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                    >
+                      {isPlaying ? (
+                        <HiOutlinePause className="w-7 h-7" />
+                      ) : (
+                        <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      )}
+                    </button>
+                    <div>
+                      <h4 className="text-lg font-semibold text-neutral-800">Sample Call Recording</h4>
+                      <p className="text-sm text-neutral-500">Member Enrollment Process</p>
+                    </div>
+                  </div>
+                  <span className="text-sm font-medium text-neutral-600 bg-neutral-100 px-3 py-1 rounded-full">
+                    {formatTime(currentTime)} / {formatTime(duration)}
+                  </span>
                 </div>
-                <span className="text-sm text-neutral-600">{formatTime(currentTime)}</span>
+                
+                <div className="relative">
+                  {/* Waveform Background */}
+                  <div className="absolute inset-0 flex items-center justify-between px-1">
+                    {waveform.map((height, index) => (
+                      <div
+                        key={index}
+                        className="w-0.5 bg-neutral-200/30 rounded-full"
+                        style={{ height: `${height * 100}%` }}
+                      />
+                    ))}
+                  </div>
+
+                  {/* Progress Bar */}
+                  <div 
+                    className="h-2 bg-neutral-100/50 backdrop-blur-sm rounded-full overflow-hidden cursor-pointer relative z-10"
+                    onClick={handleSeek}
+                    onMouseDown={handleDragStart}
+                    onMouseMove={handleDragMove}
+                    onMouseUp={handleDragEnd}
+                  >
+                    <div 
+                      className="h-full bg-primary-500 rounded-full transition-all duration-100 relative"
+                      style={{ width: `${duration ? (currentTime / duration) * 100 : 0}%` }}
+                    >
+                      <div 
+                        className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full shadow-md border-2 border-primary-500 cursor-grab active:cursor-grabbing"
+                        onMouseDown={handleDragStart}
+                      />
+                    </div>
+                  </div>
+
+                  {/* Waveform Overlay */}
+                  <div className="absolute inset-0 flex items-center justify-between px-1 pointer-events-none">
+                    {waveform.map((height, index) => (
+                      <div
+                        key={index}
+                        className="w-0.5 bg-primary-500/20 rounded-full"
+                        style={{ height: `${height * 100}%` }}
+                      />
+                    ))}
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between text-sm text-neutral-500">
+                  <span>Start</span>
+                  <span>End</span>
+                </div>
               </div>
-              <p className="text-sm text-neutral-500">Sample Call: Member Enrollment Process</p>
             </div>
           </motion.div>
         </div>

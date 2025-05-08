@@ -7,13 +7,13 @@ const quickLinks = [
   { name: 'Home', href: '/' },
   { name: 'Services', href: '#services' },
   { name: 'About', href: '#about' },
-  { name: 'Testimonials', href: '#testimonials' },
+  // { name: 'Testimonials', href: '#testimonials' },
   { name: 'Contact', href: '#contact' }
 ]
 
 const services = [
   { name: 'Customer Support', href: '#services' },
-  { name: 'AI Solutions', href: '#services' },
+  { name: 'Multilingual Support', href: '#services' },
   { name: 'Analytics & Reporting', href: '#services' },
   { name: 'Security & Compliance', href: '#services' }
 ]
@@ -32,9 +32,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">Call Center Pro</h3>
+            <h3 className="text-xl font-semibold mb-4">Reliance Partners</h3>
             <p className="text-neutral-400 mb-4">
-              Transforming customer service with AI-powered solutions and exceptional support.
+              Transforming customer service with innovative solutions and exceptional support.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((link, index) => (
@@ -44,6 +44,7 @@ const Footer = () => {
                   className="glass-card p-3 rounded-full"
                   target="_blank"
                   rel="noopener noreferrer"
+                  style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)' }}
                 >
                   {link.icon}
                 </a>
@@ -91,7 +92,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="text-neutral-400">
                 <a href="mailto:support@callcenter.com" className="hover:text-white transition-colors">
-                  support@callcenter.com
+                  support@reliancepartners.com
                 </a>
               </li>
               <li className="text-neutral-400">
