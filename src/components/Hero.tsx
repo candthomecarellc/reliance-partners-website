@@ -35,7 +35,7 @@ const Hero = () => {
       <div 
         className="fixed inset-0 bg-cover bg-no-repeat bg-center bg-fixed"
         style={{
-          backgroundImage: 'url("/images/backgrounds/hero-bg.jpeg")',
+          backgroundImage: 'url("/images/backgrounds/hero-bg-2.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'

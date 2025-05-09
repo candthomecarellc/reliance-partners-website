@@ -7,7 +7,7 @@ import { HiOutlineClock, HiOutlineCheckCircle, HiOutlineLightBulb, HiOutlineUser
 const stats = [
   {
     icon: <HiOutlineClock className="text-accent-500" />,
-    value: '24x7',
+    value: '24/7',
     label: 'Help Desk'
   },
   {
