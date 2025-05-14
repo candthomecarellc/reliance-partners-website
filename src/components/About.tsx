@@ -292,7 +292,7 @@ const About = () => {
       </section>
 
       {/* Demo Call Section */}
-      <section className="bg-gradient-to-b from-white to-sky-50 py-24">
+      {/* <section className="bg-gradient-to-b from-white to-sky-50 py-24">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -338,9 +338,9 @@ const About = () => {
                   </span>
                 </div>
                 
-                <div className="relative">
+                <div className="relative"> */}
                   {/* Waveform Background */}
-                  <div className="absolute inset-0 flex items-center justify-between px-1">
+                  {/* <div className="absolute inset-0 flex items-center justify-between px-1">
                     {waveform.map((height, index) => (
                       <div
                         key={index}
@@ -348,10 +348,10 @@ const About = () => {
                         style={{ height: `${height * 100}%` }}
                       />
                     ))}
-                  </div>
+                  </div> */}
 
                   {/* Progress Bar */}
-                  <div 
+                  {/* <div 
                     className="h-2 bg-neutral-100/50 backdrop-blur-sm rounded-full overflow-hidden cursor-pointer relative z-10"
                     onClick={handleSeek}
                     onMouseDown={handleDragStart}
@@ -367,10 +367,10 @@ const About = () => {
                         onMouseDown={handleDragStart}
                       />
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* Waveform Overlay */}
-                  <div className="absolute inset-0 flex items-center justify-between px-1 pointer-events-none">
+                  {/* <div className="absolute inset-0 flex items-center justify-between px-1 pointer-events-none">
                     {waveform.map((height, index) => (
                       <div
                         key={index}
@@ -389,7 +389,7 @@ const About = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

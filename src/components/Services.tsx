@@ -2,19 +2,26 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { HiOutlinePhone, HiOutlineLanguage, HiOutlineChartBar, HiOutlineShieldCheck } from 'react-icons/hi2'
+import { HiOutlineBuildingOffice2, HiOutlineComputerDesktop, HiOutlineClock } from 'react-icons/hi2'
 
 const services = [
   {
-    icon: <HiOutlinePhone className="text-secondary-500" />,
-    title: 'Customer Support',
-    description: 'Professional customer service solutions',
-    features: ['24/7 Support', 'Multi-channel Support', 'Quality Assurance']
+    icon: <HiOutlineBuildingOffice2 className="text-secondary-500" />,
+    title: 'In-Person Operations',
+    description: 'All staff work in-person at our Dhaka office',
+    features: ['Dedicated Workspace', 'Team Collaboration', 'Quality Control']
   },
   {
-    icon: <HiOutlineLanguage className="text-secondary-500" />,
-    title: 'Multilingual Support',
-    features: ['English', 'Bangla', 'Hindi', 'Urdu', 'Spanish']
+    icon: <HiOutlineComputerDesktop className="text-secondary-500" />,
+    title: 'Advanced Infrastructure',
+    description: 'High-end technology and infrastructure',
+    features: ['Modern Equipment', 'Secure Network', 'Backup Systems']
+  },
+  {
+    icon: <HiOutlineClock className="text-secondary-500" />,
+    title: 'U.S. Business Hours',
+    description: 'Operating on New York City business hours',
+    features: ['U.S. Holiday Schedule', '24/7 Coverage', 'Time Zone Alignment']
   }
 ]
 
@@ -84,13 +91,13 @@ const Services = () => {
           viewport={{ once: true }}
           className="text-left mb-24 max-w-4xl"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-neutral-900">Our Services</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-neutral-900">How We Operate</h2>
           <p className="text-xl text-neutral-700 leading-relaxed">
-            Comprehensive solutions for your customer service needs
+            Our Dhaka office provides professional services aligned with U.S. business standards
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {services.map((service, index) => (
             <ServiceCard key={index} service={service} index={index} />
           ))}

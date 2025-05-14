@@ -2,112 +2,77 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { HiOutlineGlobeAlt, HiOutlineClock, HiOutlineCheckCircle, HiOutlineLightBulb, HiOutlineUserGroup, HiOutlineStar, HiOutlineChartBar, HiOutlineShieldCheck, HiOutlineArrowPath, HiOutlineScale, HiOutlineCog } from 'react-icons/hi2'
+import { HiOutlineGlobeAlt, HiOutlineClock, HiOutlineCheckCircle, HiOutlineLightBulb, HiOutlineUserGroup, HiOutlineStar, HiOutlineChartBar, HiOutlineShieldCheck, HiOutlineArrowPath, HiOutlineScale, HiOutlineCog, HiOutlineAcademicCap, HiOutlineLanguage, HiOutlineComputerDesktop, HiOutlineCake, HiOutlineTruck, HiOutlineGift, HiOutlineCalendar, HiOutlineHeart } from 'react-icons/hi2'
 
 const memberFeatures = [
   {
-    icon: <HiOutlineGlobeAlt className="text-primary-500" />,
-    title: 'Multilingual Support',
-    description: 'Comprehensive language assistance',
-    stats: '5+ Languages',
-    bullets: ['Native speakers', 'Cultural understanding', 'Accurate translations']
+    icon: <HiOutlineAcademicCap className="text-primary-500" />,
+    title: 'Top Talent Recruitment',
+    description: 'Hiring from premier institutions',
+    stats: 'Elite Universities',
+    bullets: ['Top universities', 'English-medium schools', 'High academic standards']
   },
   {
-    icon: <HiOutlineClock className="text-primary-500" />,
-    title: '24x7 Help Desk',
-    description: 'Round-the-clock assistance',
-    stats: '99.9% Uptime',
-    bullets: ['Always available', 'Quick response', 'Emergency support']
+    icon: <HiOutlineLanguage className="text-primary-500" />,
+    title: 'Language Excellence',
+    description: 'Superior English proficiency',
+    stats: '100% Bilingual',
+    bullets: ['Fluent English', 'Written expertise', 'Clear communication']
   },
   {
-    icon: <HiOutlineCheckCircle className="text-primary-500" />,
-    title: 'High First-Call Resolution',
-    description: 'Efficient problem solving',
-    stats: '95% Resolution Rate',
-    bullets: ['Expert agents', 'Comprehensive training', 'Efficient processes']
-  },
-  {
-    icon: <HiOutlineLightBulb className="text-primary-500" />,
-    title: 'Rapid Response Time',
-    description: 'Quick assistance delivery',
-    stats: '< 30s Average',
-    bullets: ['Optimized workflows', 'Smart routing', 'Priority handling']
-  },
-  {
-    icon: <HiOutlineUserGroup className="text-primary-500" />,
-    title: 'Personalized Teams',
-    description: 'Dedicated support specialists',
-    stats: '100% Dedicated',
-    bullets: ['Custom protocols', 'Team consistency', 'Member familiarity']
-  },
-  {
-    icon: <HiOutlineStar className="text-primary-500" />,
-    title: 'Strong Satisfaction',
-    description: 'Exceptional member feedback',
-    stats: '98% NPS Score',
-    bullets: ['Quality focus', 'Continuous improvement', 'Member feedback']
+    icon: <HiOutlineComputerDesktop className="text-primary-500" />,
+    title: 'Technical Expertise',
+    description: 'Advanced technical skills',
+    stats: 'Tech-Savvy Team',
+    bullets: ['System adaptability', 'Digital proficiency', 'Quick learning']
   }
 ]
 
 const growthFeatures = [
   {
-    icon: <HiOutlineChartBar className="text-primary-500" />,
-    title: 'Sales Funnel',
-    description: 'Optimized conversion process',
-    stats: '30% Conversion Rate',
-    bullets: ['Lead generation', 'Qualification', 'Conversion tracking']
-  },
-  {
     icon: <HiOutlineUserGroup className="text-primary-500" />,
-    title: 'Community Engagement',
-    description: 'Active member involvement',
-    stats: '85% Engagement',
-    bullets: ['Events', 'Feedback', 'Member support']
-  },
-  {
-    icon: <HiOutlineShieldCheck className="text-primary-500" />,
-    title: 'Compliance Expertise',
-    description: 'Regulatory compliance focus',
-    stats: '100% Compliant',
-    bullets: ['Audits', 'Documentation', 'Training']
-  },
-  {
-    icon: <HiOutlineArrowPath className="text-primary-500" />,
-    title: 'Retention Strategies',
-    description: 'Member retention focus',
-    stats: '95% Retention',
-    bullets: ['Loyalty programs', 'Feedback loops', 'Personalized care']
+    title: 'Employee Retention',
+    description: 'Long-term team stability',
+    stats: '98% Retention',
+    bullets: ['Career growth', 'Team loyalty', 'Long-term commitment']
   }
 ]
 
 const transitionFeatures = [
   {
-    icon: <HiOutlineArrowPath className="text-primary-500" />,
-    title: 'Smooth Transition',
-    description: 'Seamless process transfer',
-    stats: '100% Success',
-    bullets: ['Planning', 'Execution', 'Monitoring']
+    icon: <HiOutlineCake className="text-primary-500" />,
+    title: 'Daily Benefits',
+    description: 'Free Meals and Unlimited Snacks, Tea and Coffee',
+    stats: 'Full Benefits',
+    bullets: ['Free meals', 'Unlimited snacks', 'Beverage service']
   },
   {
-    icon: <HiOutlineScale className="text-primary-500" />,
-    title: 'Scalable Solutions',
-    description: 'Flexible growth options',
-    stats: 'Unlimited Scale',
-    bullets: ['Resource allocation', 'Capacity planning', 'Growth support']
+    icon: <HiOutlineTruck className="text-primary-500" />,
+    title: 'Transportation',
+    description: 'Convenient travel support',
+    stats: 'Door-to-Door',
+    bullets: ['Drop-off service', 'Safe travel', 'Flexible timing']
   },
   {
-    icon: <HiOutlineChartBar className="text-primary-500" />,
-    title: 'Performance Tracking',
-    description: 'Continuous monitoring',
-    stats: 'Real-time Metrics',
-    bullets: ['KPIs', 'Progress tracking', 'Performance analysis']
+    icon: <HiOutlineGift className="text-primary-500" />,
+    title: 'Performance Rewards',
+    description: 'Recognition and incentives',
+    stats: 'Annual Bonus',
+    bullets: ['Yearly bonus', 'Performance rewards', 'Career growth']
   },
   {
-    icon: <HiOutlineCog className="text-primary-500" />,
-    title: 'Process Optimization',
-    description: 'Efficiency improvements',
-    stats: '30% Efficiency',
-    bullets: ['Workflow analysis', 'Process refinement', 'Continuous improvement']
+    icon: <HiOutlineCalendar className="text-primary-500" />,
+    title: 'U.S. Holiday Schedule',
+    description: 'American holiday observance',
+    stats: 'Paid Holidays',
+    bullets: ['U.S. holidays', 'Paid time off', 'Work-life balance']
+  },
+  {
+    icon: <HiOutlineHeart className="text-primary-500" />,
+    title: 'Team Culture',
+    description: 'Strong collaborative environment',
+    stats: 'Team-Focused',
+    bullets: ['Team bonding', 'Supportive culture', 'Positive environment']
   }
 ]
 
@@ -157,7 +122,7 @@ const MemberGrowthSection = () => {
             viewport={{ once: true }}
             className="mb-8"
           >
-            <h2 className="text-lg font-medium text-white">EXCELLENT MEMBER EXPERIENCE</h2>
+            <h2 className="text-lg font-medium text-white">Our Recruitment Process</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {memberFeatures.map((feature, index) => (
@@ -175,7 +140,7 @@ const MemberGrowthSection = () => {
             viewport={{ once: true }}
             className="mb-8"
           >
-            <h2 className="text-lg font-medium text-white">GROWTH & RETENTION FOCUS</h2>
+            <h2 className="text-lg font-medium text-white">Employee Retention</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {growthFeatures.map((feature, index) => (
@@ -193,7 +158,7 @@ const MemberGrowthSection = () => {
             viewport={{ once: true }}
             className="mb-8"
           >
-            <h2 className="text-lg font-medium text-white">TRANSITION & SCALABILITY</h2>
+            <h2 className="text-lg font-medium text-white">Why Employees Stay</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {transitionFeatures.map((feature, index) => (
