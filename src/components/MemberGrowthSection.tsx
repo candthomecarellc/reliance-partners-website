@@ -144,7 +144,7 @@ const MemberGrowthSection = () => {
       />
         
       {/* Gradient Overlay */}
-      <div className="absolute inset-y-0 left-0 w-full md:w-3/4 lg:w-3/4 bg-gradient-to-r from-neutral-900 via-neutral-900 to-transparent" />
+      <div className="absolute inset-y-0 left-0 w-full bg-black/50" />
       
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">

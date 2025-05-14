@@ -42,7 +42,7 @@ const techStack = [
   },
   {
     icon: <HiOutlineArrowPath className="w-10 h-10 text-primary-500" />,
-    title: 'Proactive Medicaid Renewals',
+    title: 'Proactive Renewals',
     description: 'Streamlined renewal processes with proactive outreach to ensure continuous coverage for members.',
     features: ['Automated renewal tracking', 'Proactive member outreach', 'Documentation assistance']
   },

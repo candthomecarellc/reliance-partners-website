@@ -60,19 +60,19 @@ const Contact = () => {
     {
       icon: <HiOutlineEnvelope className="w-10 h-10 text-primary-500" />,
       title: 'Email',
-      value: 'support@callcenter.com',
-      link: 'mailto:support@callcenter.com'
+      value: 'info@reliancepartners.services',
+      link: 'mailto:info@reliancepartners.services'
     },
     {
       icon: <HiOutlinePhone className="w-10 h-10 text-primary-500" />,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      value: '(917)704-5580',
+      link: 'tel:9177045580'
     },
     {
       icon: <HiOutlineMapPin className="w-10 h-10 text-primary-500" />,
       title: 'Location',
-      value: '123 Business Ave, Suite 100',
+      value: 'Block D, House 63, Road 15, Dhaka 1209',
       link: 'https://maps.google.com'
     }
   ]

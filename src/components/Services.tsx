@@ -15,18 +15,6 @@ const services = [
     icon: <HiOutlineLanguage className="text-secondary-500" />,
     title: 'Multilingual Support',
     features: ['English', 'Bangla', 'Hindi', 'Urdu', 'Spanish']
-  },
-  {
-    icon: <HiOutlineChartBar className="text-secondary-500" />,
-    title: 'Analytics & Reporting',
-    description: 'Comprehensive performance insights',
-    features: ['Real-time Metrics', 'Custom Reports', 'Performance Tracking']
-  },
-  {
-    icon: <HiOutlineShieldCheck className="text-secondary-500" />,
-    title: 'Security & Compliance',
-    description: 'Enterprise-grade security measures',
-    features: ['Data Encryption', 'Compliance Monitoring', 'Access Control']
   }
 ]
 

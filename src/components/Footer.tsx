@@ -92,16 +92,16 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="text-neutral-400">
                 <a href="mailto:support@callcenter.com" className="hover:text-white transition-colors">
-                  support@reliancepartners.com
+                  info@reliancepartners.services
                 </a>
               </li>
               <li className="text-neutral-400">
                 <a href="tel:+15551234567" className="hover:text-white transition-colors">
-                  +1 (555) 123-4567
+                  (917)704-5580
                 </a>
               </li>
               <li className="text-neutral-400">
-                123 Business Ave, Suite 100
+                Block D, House 63, Road 15, Dhaka 1209
               </li>
             </ul>
           </div>

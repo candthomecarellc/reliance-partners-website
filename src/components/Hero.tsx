@@ -35,7 +35,7 @@ const Hero = () => {
       <div 
         className="fixed inset-0 bg-cover bg-no-repeat bg-center bg-fixed"
         style={{
-          backgroundImage: 'url("/images/backgrounds/hero-bg-2.jpg")',
+          backgroundImage: 'url("/images/backgrounds/hero-bg.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -86,12 +86,12 @@ const Hero = () => {
                 Transform Your Customer Service with Reliance Partners
               </h1>
               <p className="text-lg md:text-xl text-neutral-200 mb-6 md:mb-8">
-                A trusted partner in healthcare support services, delivering excellence through specialized expertise and innovative solutions.
+                A trusted partner in customer support services, delivering excellence through specialized expertise and innovative solutions.
               </p>
             </motion.div>
 
             {/* Features Grid */}
-            <motion.div
+            {/* <motion.div
               className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4 max-w-4xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -108,7 +108,7 @@ const Hero = () => {
                   <h3 className="text-sm font-semibold text-white">{feature.title}</h3>
                 </motion.div>
               ))}
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </div>

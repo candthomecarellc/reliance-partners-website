@@ -48,9 +48,9 @@ const Navigation = () => {
                 {item.name}
               </ScrollLink>
             ))}
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
+            {/* <button className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
               Get Started
-            </button>
+            </button> */}
           </div>
 
           {/* Mobile menu button */}
@@ -87,9 +87,9 @@ const Navigation = () => {
                 {item.name}
               </ScrollLink>
             ))}
-            <button className="w-full bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
+            {/* <button className="w-full bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
               Get Started
-            </button>
+            </button> */}
           </div>
         </div>
       )}
