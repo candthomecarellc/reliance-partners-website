@@ -86,7 +86,7 @@ const Hero = () => {
                 Transform Your Customer Service with Reliance Partners
               </h1>
               <p className="text-lg md:text-xl text-neutral-200 mb-6 md:mb-8">
-                A trusted partner in customer support services, delivering excellence through specialized expertise and innovative solutions.
+                A trusted partner in customer support services, delivering excellence through specialized expertise and innovative solutions
               </p>
             </motion.div>
 

@@ -8,7 +8,7 @@ const outcomes = [
   {
     icon: <HiOutlineChartBar className="w-10 h-10 text-primary-500" />,
     title: 'Enhanced Operational Efficiency',
-    description: 'Streamlined processes and optimized workflows leading to improved productivity.',
+    description: 'Streamlined processes and optimized workflows leading to improved productivity',
     stats: 'Performance Boost',
     details: [
       'Process optimization',
@@ -20,7 +20,7 @@ const outcomes = [
   {
     icon: <HiOutlineUserGroup className="w-10 h-10 text-primary-500" />,
     title: 'Improved Member Experience',
-    description: 'Enhanced service quality and satisfaction through dedicated support and care.',
+    description: 'Enhanced service quality and satisfaction through dedicated support and care',
     stats: 'Member Satisfaction',
     details: [
       'Personalized support',
@@ -32,7 +32,7 @@ const outcomes = [
   {
     icon: <HiOutlineUserPlus className="w-10 h-10 text-primary-500" />,
     title: 'Increased Enrollment & Retention',
-    description: 'Strategic approaches to attract and maintain member participation.',
+    description: 'Strategic approaches to attract and maintain member participation',
     stats: 'Growth Focus',
     details: [
       'Targeted outreach',
@@ -44,7 +44,7 @@ const outcomes = [
   {
     icon: <HiOutlineClipboardDocument className="w-10 h-10 text-primary-500" />,
     title: 'NYS Regulatory Compliance',
-    description: 'Comprehensive adherence to state regulations and industry standards.',
+    description: 'Comprehensive adherence to state regulations and industry standards',
     stats: 'Compliance Excellence',
     details: [
       'Regulatory alignment',

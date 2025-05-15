@@ -93,7 +93,7 @@ const Services = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-neutral-900">How We Operate</h2>
           <p className="text-xl text-neutral-700 leading-relaxed">
-            Our Dhaka office provides professional services aligned with U.S. business standards
+            Our Dhaka office provides professional services aligned with U.S. business standards.
           </p>
         </motion.div>
 

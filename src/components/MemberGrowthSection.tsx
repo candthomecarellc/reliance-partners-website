@@ -2,7 +2,9 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { HiOutlineGlobeAlt, HiOutlineClock, HiOutlineCheckCircle, HiOutlineLightBulb, HiOutlineUserGroup, HiOutlineStar, HiOutlineChartBar, HiOutlineShieldCheck, HiOutlineArrowPath, HiOutlineScale, HiOutlineCog, HiOutlineAcademicCap, HiOutlineLanguage, HiOutlineComputerDesktop, HiOutlineCake, HiOutlineTruck, HiOutlineGift, HiOutlineCalendar, HiOutlineHeart } from 'react-icons/hi2'
+import { GiMeal } from 'react-icons/gi'
+import { TbCoffee } from 'react-icons/tb'
+import { HiOutlineAcademicCap, HiOutlineLanguage, HiOutlineComputerDesktop, HiOutlineUserGroup, HiOutlineTruck, HiOutlineGift, HiOutlineCalendar, HiOutlineHeart } from 'react-icons/hi2'
 
 const memberFeatures = [
   {
@@ -40,11 +42,18 @@ const growthFeatures = [
 
 const transitionFeatures = [
   {
-    icon: <HiOutlineCake className="text-primary-500" />,
-    title: 'Daily Benefits',
-    description: 'Free Meals and Unlimited Snacks, Tea and Coffee',
+    icon: <GiMeal className="text-primary-500" />,
+    title: 'Daily Meals',
+    description: 'Free Nutritious Meals Provided',
     stats: 'Full Benefits',
-    bullets: ['Free meals', 'Unlimited snacks', 'Beverage service']
+    bullets: ['Lunch provided', 'Dinner options', 'Quality food']
+  },
+  {
+    icon: <TbCoffee className="text-primary-500" />,
+    title: 'Refreshments',
+    description: 'Unlimited Snacks, Tea and Coffee',
+    stats: 'Always Available',
+    bullets: ['Fresh coffee', 'Variety of teas', 'Healthy snacks']
   },
   {
     icon: <HiOutlineTruck className="text-primary-500" />,

@@ -31,25 +31,25 @@ const techStack = [
   {
     icon: <HiOutlineClipboardDocument className="w-10 h-10 text-primary-500" />,
     title: 'MLTC Workflow Expertise',
-    description: 'Deep understanding of Managed Long-Term Care operations and processes, ensuring efficient and compliant service delivery.',
+    description: 'Deep understanding of Managed Long-Term Care operations and processes, ensuring efficient and compliant service delivery',
     features: ['Comprehensive MLTC program knowledge', 'Streamlined care coordination', 'Efficient documentation management']
   },
   {
     icon: <HiOutlineCheck className="w-10 h-10 text-primary-500" />,
     title: 'Eligibility & Enrollment Verification',
-    description: 'Thorough verification processes to ensure accurate member eligibility and seamless enrollment experiences.',
+    description: 'Thorough verification processes to ensure accurate member eligibility and seamless enrollment experiences',
     features: ['Automated verification systems', 'Document management expertise', 'Compliance-focused processes']
   },
   {
     icon: <HiOutlineArrowPath className="w-10 h-10 text-primary-500" />,
     title: 'Proactive Renewals',
-    description: 'Streamlined renewal processes with proactive outreach to ensure continuous coverage for members.',
+    description: 'Streamlined renewal processes with proactive outreach to ensure continuous coverage for members',
     features: ['Automated renewal tracking', 'Proactive member outreach', 'Documentation assistance']
   },
   {
     icon: <HiOutlineScale className="w-10 h-10 text-primary-500" />,
     title: 'Complex Case Escalation',
-    description: 'Structured escalation process for handling complex member needs with specialized attention.',
+    description: 'Structured escalation process for handling complex member needs with specialized attention',
     features: ['Multi-level escalation protocols', 'Specialized case management', 'Expert resolution tracking']
   }
 ]
@@ -184,7 +184,7 @@ const About = () => {
             >
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">About Us</h2>
               <p className="text-xl text-neutral-200 mb-8 leading-relaxed">
-                Leading the way in customer service innovation with cutting-edge technology and dedicated expertise.
+                Leading the way in customer service innovation with cutting-edge technology and dedicated expertise
               </p>
               
               {/* Stats */}

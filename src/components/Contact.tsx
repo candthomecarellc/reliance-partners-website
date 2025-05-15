@@ -66,14 +66,14 @@ const Contact = () => {
     {
       icon: <HiOutlinePhone className="w-10 h-10 text-primary-500" />,
       title: 'Phone',
-      value: '(917)704-5580',
+      value: '(917) 704-5580',
       link: 'tel:9177045580'
     },
     {
       icon: <HiOutlineMapPin className="w-10 h-10 text-primary-500" />,
       title: 'Location',
-      value: 'Block D, House 63, Road 15, Dhaka 1209',
-      link: 'https://maps.google.com'
+      value: '175-61 Hillside Ave. #403, Jamaica, NY 11432',
+      link: 'https://www.google.com/maps/place/175-61+Hillside+Ave.+%23403,+Jamaica,+NY+11432,+USA/@40.712405,-73.7857458,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2611a2c0a9f6f:0xbe5b7948c5d92ae5!8m2!3d40.712405!4d-73.7857458?entry=ttu&g_ep=EgoyMDI1MDUxMi4wIKXMDSoASAFQAw%3D%3D'
     }
   ]
 

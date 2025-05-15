@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <h3 className="text-xl font-semibold mb-4">Reliance Partners</h3>
             <p className="text-neutral-400 mb-4">
-              Transforming customer service with innovative solutions and exceptional support.
+              Transforming customer service with innovative solutions and exceptional support
             </p>
             {/* <div className="flex space-x-4">
               {socialLinks.map((link, index) => (
@@ -97,11 +97,11 @@ const Footer = () => {
               </li>
               <li className="text-neutral-400">
                 <a href="tel:+15551234567" className="hover:text-white transition-colors">
-                  (917)704-5580
+                  (917) 704-5580
                 </a>
               </li>
               <li className="text-neutral-400">
-                Block D, House 63, Road 15, Dhaka 1209
+                175-61 Hillside Avenue Suite 403 <br /> Jamaica, NY 11432
               </li>
             </ul>
           </div>
@@ -110,7 +110,7 @@ const Footer = () => {
         <div className="border-t border-neutral-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-neutral-400 text-sm">
-              © {new Date().getFullYear()} C&T IT. All rights reserved.
+              © {new Date().getFullYear()} Reliance IT. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-neutral-400 hover:text-white text-sm transition-colors">

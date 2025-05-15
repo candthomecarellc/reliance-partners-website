@@ -143,7 +143,7 @@ const TechnologyAndData = () => {
               >
                 <h2 className="text-xl md:text-2xl font-bold text-neutral-800 mb-2">TECHNOLOGY INTEGRATION & SECURITY</h2>
                 <p className="text-sm text-neutral-600">
-                  Advanced technology solutions ensuring secure, efficient, and seamless member support across all channels.
+                  Advanced technology solutions ensuring secure, efficient, and seamless member support across all channels
                 </p>
               </motion.div>
 
@@ -175,7 +175,7 @@ const TechnologyAndData = () => {
               >
                 <h2 className="text-xl md:text-2xl font-bold text-neutral-800 mb-2">DATA & REPORTING CAPABILITIES</h2>
                 <p className="text-sm text-neutral-600">
-                  Comprehensive analytics and reporting solutions providing actionable insights for informed decision-making.
+                  Comprehensive analytics and reporting solutions providing actionable insights for informed decision-making
                 </p>
               </motion.div>
 
