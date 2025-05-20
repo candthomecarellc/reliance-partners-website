@@ -21,7 +21,7 @@ export async function POST(request: Request) {
 
     // Email content
     const mailOptions = {
-      from: 'ishmam.aziz@candthomecare.com',
+      from: 'docs@candthomecare.com',
       to: 'ishmam.aziz@candthomecare.com',
       subject: `New Contact Form Submission: ${subject}`,
       html: `
