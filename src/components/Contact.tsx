@@ -11,6 +11,8 @@ const Contact = () => {
     subject: '',
     message: ''
   })
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+  console.log('API URL:', apiUrl); // Debug log
 
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<{
@@ -24,7 +26,7 @@ const Contact = () => {
     setSubmitStatus({ type: null, message: '' })
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch(`${apiUrl}/api/email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -257,4 +259,4 @@ const Contact = () => {
   )
 }
 
-export default Contact 
+export default Contact
