@@ -82,11 +82,11 @@ const Hero = () => {
               transition={{ duration: 0.8 }}
               className="max-w-2xl"
             >
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-white">
-                Transform Your Customer Service with Reliance Partners
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                Transform Your Customer Service With Reliance Partners
               </h1>
               <p className="text-lg md:text-xl text-neutral-200 mb-6 md:mb-8">
-                A trusted partner in customer support services, delivering excellence through specialized expertise and innovative solutions
+                A trusted partner in customer support services, delivering excellence through specialized expertise and innovative solutions.
               </p>
             </motion.div>
 

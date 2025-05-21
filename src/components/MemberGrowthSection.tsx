@@ -131,7 +131,7 @@ const MemberGrowthSection = () => {
             viewport={{ once: true }}
             className="mb-8"
           >
-            <h2 className="text-lg font-medium text-white">Our Recruitment Process</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Our Recruitment Process</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {memberFeatures.map((feature, index) => (
@@ -142,19 +142,24 @@ const MemberGrowthSection = () => {
 
         {/* Growth Section */}
         <div className="mb-16">
+          <div className="grid grid-cols-1 gap-4">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="mb-8"
-          >
-            <h2 className="text-lg font-medium text-white">Employee Retention</h2>
-          </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {growthFeatures.map((feature, index) => (
-              <FeatureCard key={index} feature={feature} index={index} />
-            ))}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+              className=""
+            >
+              <div className="flex items-center mb-2">
+                <div className="mr-3">
+                  <HiOutlineUserGroup className="text-white w-8 h-8" />
+                </div>
+                <div>
+                  <h3 className="text-base font-semibold text-white">Employee Retention</h3>
+                </div>
+              </div>
+              <p className="text-base font-semibold text-white">We achieved long-term team stability through consistent employee retention, career development opportunities, and a supportive work environment that fosters lasting professional relationships. Our retention rate is 98%.</p>
+            </motion.div>
           </div>
         </div>
 
@@ -167,9 +172,9 @@ const MemberGrowthSection = () => {
             viewport={{ once: true }}
             className="mb-8"
           >
-            <h2 className="text-lg font-medium text-white">Why Employees Stay</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Why Employees Stay</h2>
           </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {transitionFeatures.map((feature, index) => (
               <FeatureCard key={index} feature={feature} index={index} />
             ))}

@@ -141,9 +141,9 @@ const TechnologyAndData = () => {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-xl md:text-2xl font-bold text-neutral-800 mb-2">TECHNOLOGY INTEGRATION & SECURITY</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">Technology Integration & Security</h2>
                 <p className="text-sm text-neutral-600">
-                  Advanced technology solutions ensuring secure, efficient, and seamless member support across all channels
+                  We provide advanced technology solutions ensuring secure, efficient, and seamless member support across all channels.
                 </p>
               </motion.div>
 
@@ -173,9 +173,9 @@ const TechnologyAndData = () => {
                 viewport={{ once: true }}
                 className="mb-12"
               >
-                <h2 className="text-xl md:text-2xl font-bold text-neutral-800 mb-2">DATA & REPORTING CAPABILITIES</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">Data & Reporting Capabilities</h2>
                 <p className="text-sm text-neutral-600">
-                  Comprehensive analytics and reporting solutions providing actionable insights for informed decision-making
+                  We offer comprehensive analytics and reporting solutions providing actionable insights for informed decision-making.
                 </p>
               </motion.div>
 

@@ -8,7 +8,7 @@ const outcomes = [
   {
     icon: <HiOutlineChartBar className="w-10 h-10 text-primary-500" />,
     title: 'Enhanced Operational Efficiency',
-    description: 'Streamlined processes and optimized workflows leading to improved productivity',
+    description: 'We improve productivity through streamlined processes and optimized workflows.',
     stats: 'Performance Boost',
     details: [
       'Process optimization',
@@ -20,7 +20,7 @@ const outcomes = [
   {
     icon: <HiOutlineUserGroup className="w-10 h-10 text-primary-500" />,
     title: 'Improved Member Experience',
-    description: 'Enhanced service quality and satisfaction through dedicated support and care',
+    description: 'We enhance service quality and satisfaction through dedicated support and care.',
     stats: 'Member Satisfaction',
     details: [
       'Personalized support',
@@ -32,7 +32,7 @@ const outcomes = [
   {
     icon: <HiOutlineUserPlus className="w-10 h-10 text-primary-500" />,
     title: 'Increased Enrollment & Retention',
-    description: 'Strategic approaches to attract and maintain member participation',
+    description: 'We implement strategic approaches to attract and maintain member participation.',
     stats: 'Growth Focus',
     details: [
       'Targeted outreach',
@@ -44,7 +44,7 @@ const outcomes = [
   {
     icon: <HiOutlineClipboardDocument className="w-10 h-10 text-primary-500" />,
     title: 'NYS Regulatory Compliance',
-    description: 'Comprehensive adherence to state regulations and industry standards',
+    description: 'We ensure comprehensive adherence to state regulations and industry standards.',
     stats: 'Compliance Excellence',
     details: [
       'Regulatory alignment',
@@ -93,7 +93,7 @@ const Results = () => {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h2 className="text-2xl font-bold text-white">EXPECTED RESULTS</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white">Expected Results</h2>
         </motion.div>
 
         <div className="space-y-12">

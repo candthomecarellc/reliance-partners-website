@@ -8,19 +8,19 @@ const services = [
   {
     icon: <HiOutlineBuildingOffice2 className="text-secondary-500" />,
     title: 'In-Person Operations',
-    description: 'All staff work in-person at our Dhaka office',
+    description: 'All staff work in-person at our Dhaka office.',
     features: ['Dedicated Workspace', 'Team Collaboration', 'Quality Control']
   },
   {
     icon: <HiOutlineComputerDesktop className="text-secondary-500" />,
     title: 'Advanced Infrastructure',
-    description: 'High-end technology and infrastructure',
+    description: 'We have high-end technology and infrastructure.',
     features: ['Modern Equipment', 'Secure Network', 'Backup Systems']
   },
   {
     icon: <HiOutlineClock className="text-secondary-500" />,
     title: 'U.S. Business Hours',
-    description: 'Operating on New York City business hours',
+    description: 'We operate on New York City business hours.',
     features: ['U.S. Holiday Schedule', '24/7 Coverage', 'Time Zone Alignment']
   }
 ]
@@ -91,7 +91,7 @@ const Services = () => {
           viewport={{ once: true }}
           className="text-left mb-24 max-w-4xl"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-neutral-900">How We Operate</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-neutral-900">How We Operate</h2>
           <p className="text-xl text-neutral-700 leading-relaxed">
             Our Dhaka office provides professional services aligned with U.S. business standards.
           </p>

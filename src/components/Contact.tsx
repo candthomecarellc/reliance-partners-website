@@ -11,7 +11,7 @@ const Contact = () => {
     subject: '',
     message: ''
   })
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
   console.log('API URL:', apiUrl); // Debug log
 
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -74,7 +74,7 @@ const Contact = () => {
     {
       icon: <HiOutlineMapPin className="w-10 h-10 text-primary-500" />,
       title: 'Location',
-      value: '175-61 Hillside Ave. #403, Jamaica, NY 11432',
+      value: '175-61 Hillside Avenue Suite 403 Jamaica, NY 11432',
       link: 'https://www.google.com/maps/place/175-61+Hillside+Ave.+%23403,+Jamaica,+NY+11432,+USA/@40.712405,-73.7857458,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2611a2c0a9f6f:0xbe5b7948c5d92ae5!8m2!3d40.712405!4d-73.7857458?entry=ttu&g_ep=EgoyMDI1MDUxMi4wIKXMDSoASAFQAw%3D%3D'
     }
   ]
@@ -135,7 +135,7 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">Contact Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">Contact Us</h2>
           <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
             Get in touch with our team to learn more about our services and how we can help your business.
           </p>
