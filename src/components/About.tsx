@@ -183,7 +183,7 @@ const About = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">About Us</h2>
-              <p className="text-xl text-neutral-200 mb-8 leading-relaxed">
+              <p className="text-lg md:text-xl text-neutral-200 mb-8 leading-relaxed">
                 Leading the way in customer service innovation with cutting-edge technology and dedicated expertise.
               </p>
               
