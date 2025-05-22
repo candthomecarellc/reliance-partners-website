@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <h3 className="text-xl font-semibold mb-4">Reliance Partners</h3>
             <p className="text-neutral-400 mb-4">
-              Transforming customer service with innovative solutions and exceptional support
+              Transforming customer service with innovative solutions and exceptional support.
             </p>
             {/* <div className="flex space-x-4">
               {socialLinks.map((link, index) => (
