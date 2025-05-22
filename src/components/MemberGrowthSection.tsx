@@ -98,11 +98,11 @@ const FeatureCard = ({ feature, index }: { feature: typeof memberFeatures[0], in
         {React.cloneElement(feature.icon, { className: "text-white w-8 h-8" })}
       </div>
       <div>
-        <h3 className="text-base font-semibold text-white">{feature.title}</h3>
-        <p className="text-xs font-medium text-white/80">{feature.stats}</p>
+        <h3 className="text-base md:text-lg font-semibold text-white">{feature.title}</h3>
+        <p className="text-xs md:text-sm font-medium text-white/80">{feature.stats}</p>
       </div>
     </div>
-    <p className="text-sm text-white/80">{feature.description}</p>
+    <p className="text-sm md:text-base text-white/80">{feature.description}</p>
   </motion.div>
 )
 
@@ -155,10 +155,11 @@ const MemberGrowthSection = () => {
                   <HiOutlineUserGroup className="text-white w-8 h-8" />
                 </div>
                 <div>
-                  <h3 className="text-base font-semibold text-white">Employee Retention</h3>
+                  <h3 className="text-base md:text-lg font-semibold text-white">Employee Retention</h3>
+                  <p className="text-xs md:text-sm font-medium text-white/80">98% Retention Rate</p>
                 </div>
               </div>
-              <p className="text-base font-semibold text-white">We achieved long-term team stability through consistent employee retention, career development opportunities, and a supportive work environment that fosters lasting professional relationships. Our retention rate is 98%.</p>
+              <p className="text-sm md:text-base text-white">We achieved long-term team stability through consistent employee retention, career development opportunities, and a supportive work environment that fosters lasting professional relationships.</p>
             </motion.div>
           </div>
         </div>

@@ -172,10 +172,10 @@ const About = () => {
           <div className="absolute inset-0 bg-about bg-[position:center_center] bg-cover bg-fixed" />
           
           {/* Gradient Overlay */}
-          <div className="absolute inset-y-0 left-0 w-full md:w-3/4 lg:w-3/4 bg-gradient-to-r from-neutral-900 via-neutral-900 to-transparent" />
+          <div className="absolute inset-y-0 left-0 w-full md:w-3/4 bg-gradient-to-r from-neutral-900 via-neutral-900 to-transparent" />
           
           {/* Side Content */}
-          <div className="absolute inset-y-0 left-0 w-full md:w-1/2 lg:w-1/3 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
+          <div className="absolute inset-y-0 left-0 w-full md:w-1/2 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -200,7 +200,7 @@ const About = () => {
                   >
                     <div className="text-2xl text-sky-400 mb-2">{stat.icon}</div>
                     <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
-                    <div className="text-neutral-300 text-sm">{stat.label}</div>
+                    <div className="text-neutral-300 text-sm md:text-base">{stat.label}</div>
                   </motion.div>
                 ))}
               </div>
@@ -279,8 +279,8 @@ const About = () => {
                         {tech.icon}
                       </div>
                       <div className="flex-1 min-w-0">
-                        <h3 className="text-lg font-semibold text-neutral-800 mb-1">{tech.title}</h3>
-                        <p className="text-sm text-neutral-600">{tech.description}</p>
+                        <h3 className="text-base md:text-lg font-semibold text-neutral-800 mb-1">{tech.title}</h3>
+                        <p className="text-sm md:text-base text-neutral-600">{tech.description}</p>
                       </div>
                     </div>
                   </motion.div>

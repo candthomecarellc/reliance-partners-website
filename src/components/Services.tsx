@@ -34,11 +34,11 @@ const ServiceCard = ({ service, index }: { service: typeof services[0], index: n
     className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full flex flex-col"
   >
     <div className="text-4xl mb-6 text-sky-500">{service.icon}</div>
-    <h3 className="text-2xl font-semibold mb-4 text-neutral-900">{service.title}</h3>
-    <p className="text-neutral-700 mb-6 text-lg">{service.description}</p>
+    <h3 className="text-xl md:text-2xl font-semibold mb-4 text-neutral-900">{service.title}</h3>
+    <p className="text-neutral-700 mb-6 text-base md:text-lg">{service.description}</p>
     <ul className="space-y-3 mt-auto">
       {service.features.map((feature, i) => (
-        <li key={i} className="flex items-center text-neutral-700 text-lg">
+        <li key={i} className="flex items-center text-neutral-700 text-sm md:text-base">
           <svg className="w-5 h-5 mr-3 text-sky-500" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
           </svg>

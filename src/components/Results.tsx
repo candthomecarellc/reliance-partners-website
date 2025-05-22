@@ -68,9 +68,9 @@ const OutcomeCard = ({ outcome, index }: { outcome: typeof outcomes[0], index: n
         {outcome.icon}
       </div>
       <div>
-        <h3 className="text-lg font-semibold text-white">{outcome.title}</h3>
-        <p className="text-sm font-medium text-blue-300 mb-1">{outcome.stats}</p>
-        <p className="text-sm text-gray-200">{outcome.description}</p>
+        <h3 className="text-base md:text-lg font-semibold text-white">{outcome.title}</h3>
+        <p className="text-xs md:text-sm font-medium text-blue-300 mb-1">{outcome.stats}</p>
+        <p className="text-sm md:text-base text-gray-200">{outcome.description}</p>
       </div>
     </div>
   </motion.div>

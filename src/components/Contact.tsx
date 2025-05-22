@@ -136,7 +136,7 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">Contact Us</h2>
-          <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-neutral-600 max-w-2xl mx-auto">
             Get in touch with our team to learn more about our services and how we can help your business.
           </p>
         </motion.div>
@@ -157,8 +157,8 @@ const Contact = () => {
                 className="bg-white/80 backdrop-blur-sm rounded-xl p-6 text-center hover:shadow-lg transition-shadow"
               >
                 <div className="flex justify-center mb-4">{info.icon}</div>
-                <h3 className="text-lg font-semibold text-neutral-800 mb-2">{info.title}</h3>
-                <p className="text-neutral-600">{info.value}</p>
+                <h3 className="text-base md:text-lg font-semibold text-neutral-800 mb-2">{info.title}</h3>
+                <p className="text-sm md:text-base text-neutral-600">{info.value}</p>
               </motion.a>
             ))}
           </div>

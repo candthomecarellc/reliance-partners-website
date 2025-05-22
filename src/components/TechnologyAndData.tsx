@@ -72,11 +72,11 @@ const FeatureCard = ({ feature, index }: { feature: typeof technologyFeatures[0]
         {React.cloneElement(feature.icon, { className: "text-primary-500 w-10 h-10" })}
       </div>
       <div>
-        <h3 className="text-base font-semibold text-neutral-800">{feature.title}</h3>
-        <p className="text-xs font-medium text-blue-500">{feature.stats}</p>
+        <h3 className="text-base md:text-lg font-semibold text-neutral-800">{feature.title}</h3>
+        <p className="text-xs md:text-sm font-medium text-blue-500">{feature.stats}</p>
       </div>
     </div>
-    <p className="text-sm text-neutral-600 mt-2">{feature.description}</p>
+    <p className="text-sm md:text-base text-neutral-600 mt-2">{feature.description}</p>
   </motion.div>
 )
 
@@ -142,7 +142,7 @@ const TechnologyAndData = () => {
                 className="mb-12"
               >
                 <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">Technology Integration & Security</h2>
-                <p className="text-sm text-neutral-600">
+                <p className="text-lg md:text-xl text-neutral-600">
                   We provide advanced technology solutions ensuring secure, efficient, and seamless member support across all channels.
                 </p>
               </motion.div>
@@ -174,7 +174,7 @@ const TechnologyAndData = () => {
                 className="mb-12"
               >
                 <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">Data & Reporting Capabilities</h2>
-                <p className="text-sm text-neutral-600">
+                <p className="text-lg md:text-xl text-neutral-600">
                   We offer comprehensive analytics and reporting solutions providing actionable insights for informed decision-making.
                 </p>
               </motion.div>
