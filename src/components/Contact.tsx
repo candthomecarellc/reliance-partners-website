@@ -68,8 +68,8 @@ const Contact = () => {
     {
       icon: <HiOutlinePhone className="w-10 h-10 text-primary-500" />,
       title: 'Phone',
-      value: '(917) 704-5580',
-      link: 'tel:9177045580'
+      value: '(929) 429-2000',
+      link: 'tel:9294292000'
     },
     {
       icon: <HiOutlineMapPin className="w-10 h-10 text-primary-500" />,
